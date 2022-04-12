@@ -25,8 +25,6 @@ class Entity {
             //renders a secondary one if it's wrapping around
             rect(this.x,this.y + height,this.w,this.h)
         }
-
-
     }
 }
 
@@ -35,10 +33,8 @@ const entities = []
 
 function setup() {
     createCanvas(windowWidth - 20,windowHeight - 20);
-
-
     //Populate based on a random number of values
-    for(var i = 0; i < random(0,500); i++) {
+    for(var i = 0; i < 500; i++) {
         entities.push(new Entity(width,height));
     }
 }
